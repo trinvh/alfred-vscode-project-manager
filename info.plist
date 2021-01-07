@@ -185,6 +185,10 @@
 			<integer>95</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.0.1</string>
 	<key>webaddress</key>
 	<string>https://trinvh.com</string>
 </dict>
