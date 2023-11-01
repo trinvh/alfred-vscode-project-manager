@@ -4,7 +4,7 @@ import os
 
 # read file
 filePath = os.path.join(os.path.expanduser(
-    '~'), 'Library/Application Support/Code/User/globalStorage/alefragnani.project-manager/projects.json')
+    '~'), 'Library/Application Support/Code/User/globalStorage/alefragnani.project-manager/projects_cache_git.json')
 
 with open(filePath, 'r') as file:
     data = file.read()
@@ -18,8 +18,7 @@ items = []
 for project in projects:
     item = {
         "title": project['name'],
-        "subtitle": project['rootPath'].split('/')[-1],
-        "arg": project['rootPath']
+        "arg": project['fullPath']
     }
     if sys.argv[1]:
         if sys.argv[1].lower() in project['name'].lower():
