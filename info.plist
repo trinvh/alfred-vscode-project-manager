@@ -137,7 +137,7 @@
 				<key>runningsubtext</key>
 				<string>Please wait</string>
 				<key>script</key>
-				<string>/usr/bin/python parser.py "{query}"</string>
+				<string>/usr/bin/python3 parser.py "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
